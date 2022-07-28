@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Radio+Canada:ital,wght@0,400;0,500;0,600;1,600&family=Roboto+Mono:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap');
+@font-face {
+	font-family: myFirstFont;
+	src: url(../css/circular-std-medium-500.ttf);
+}
+
+
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: myFirstFont;
+}
+
+.main-outer-div
+{
+	background: #F7F7F7;
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+.logo img
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 2rem auto;
+}
+
+.login-form
+{
+	width: 480px;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 2rem;
+	border-radius: 5px;
+/* border:1px solid rgba(203, 201, 201,.2); */
+box-shadow: 0 0  1px 1px rgba(203, 201, 201,.5);
+}
+.heading
+{
+	font-weight: 500;
+	line-height: 31px;
+	font-size: 26px;
+	color:#1f1f1f;
+	text-align: center;
+}
+.title
+{
+	font-weight: 400;
+	color:#4c4c4c;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.main-outer-div form
+{
+  margin-top: 1rem;
+}
+
+.login-form form label
+{
+	color:15px;
+	font-weight: 400;
+	line-height: 23px;
+	color: #1f1f1f;
+}
+
+.login-form form label a
+{
+	text-decoration: none;
+	color:#1f1f1f
+}
+.form-group
+{
+	position: relative;
+}
+.password-eye
+{
+	position: absolute;
+	top:55%;
+	right: 10px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: #F7F7F7;;
+}
+.form-control
+{
+	padding: 10px !important;
+	box-shadow: none !important;
+	outline: none !important;
+	border: 1px solid #e3e3e3 !important;
+	background-color: #fbfbfb;
+}
+.login-form button
+{
+	width: 100%;
+	background:linear-gradient(to right,#f43b48 0%,#453a94 100%);
+	border-radius: 4px;
+	font-size: 22px;
+	padding: 10px 22px;
+	color: #fff;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.register
+{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color:#1f1f1f;
+	text-align: center;
+}
+.register a
+{
+  color:#f43b48;
+		text-transform: capitalize;
+		text-decoration: none;
+}
+.forgat a
+{
+	font-weight: 400;
+	font-size: 15px;
+	color: #8e8e8e !important;
+}
+.register a:hover
+{
+	color:#f43b48;
+}
+.login-form span
+{
+	color:#f43b48;
+}
+
+/*--------------- form validation style -------------*/
+
+.errorborder
+{
+	border: 1px solid #f43b48 !important;
+}

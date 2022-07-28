@@ -1,12 +1,20 @@
 import './App.css';
 import './assets/css/index.css'
+import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import {
+  LognIn,
+  Register
+} from "./API/index"
+
 function App() {
   return (
     <div className="App">
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    
+    <Router>
+    <Routes>
+    <Route path="/" element={<LognIn/>}></Route>
+    <Route path="/Register" element={<Register/>}></Route>
+    </Routes>
+    </Router>
     </div>
   );
 }
